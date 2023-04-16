@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="profile-picture">
+        <img src="logo.jpg" alt="">
+      <img src="profilepic.jpg" alt="Profile Picture">
+    
+      <input type="file" id="profile-picture-upload" name="profile-picture-upload">
+      <label for="profile-picture-upload">Upload a new profile picture</label>
+    </div>
+    <form>
+      <h2>Edit Profile</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+      <!-- Other relevant fields can be added here -->
+      <label for="about">About Me:</label>
+      <textarea id="about" name="about"></textarea>
+      <label for="preferences">Partner Preferences:</label>
+      <textarea id="preferences" name="preferences"></textarea>
+      <div class="buttons">
+        <button type="button" class="edit-button">Edit</button>
+        <button type="submit" class="save-button">Save</button>
+      </div>
+    </form>
+  </body>
+</html>
